@@ -44,3 +44,20 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+# Modificare i widget da pannello - Installazione
+
+- Come libreria 'tweakpane' installare: yarn add tweakpane
+- Controllare se per il typescript è necessario aggiungere tweakpane.d.ts
+
+# Modificare i widget da pannello - Dove inserire la possibilità di modificare il css
+
+- Quando seleziono il widget cliccando su "Edit Global Settings" (o aggingere un nuovo pulsante per accedere subito all'edit di quel blocco?)
+- Qui avrò la possibilità a sinistra di vedere il blocco del widget ricreato e a destra il tool che farà vedere cosa sto cambiando
+- Una volta cambiato gli stili, salvando verranno salvati anche i dati del css che saranno un json
+- Il json, probabilmente, sarà un file a parte, questo perché devo recuperare le variabili esistenti e metterle a disposizione del componente e dovranno essere la copia delle variabili usate all'interno della webapp.
+
+# Riprendere i dati lato webApp - Domande - Ipotesi
+
+- Come riprendo i dati lato webApp per poter aggiornare il css.conf.css?
+- Quando modifico lato pannello le variabili, parto da un json che è la copia esatta della lista delle variabili css, tutte le volte che salvo verranno aggiornate solo le variabili che sono cambiate
